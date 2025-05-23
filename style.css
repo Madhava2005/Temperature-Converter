@@ -1,0 +1,97 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  /* Gradient background for a modern, attractive look */
+  background: linear-gradient(135deg, #31343d, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  transition: background 0.5s ease;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  width: 350px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #f0f0f5;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+
+.converter label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #e0e0eb;
+}
+
+#tempInput {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+#tempInput::placeholder {
+  color: #d1d1e0;
+}
+
+#tempInput:focus {
+  border-color: #ffd700;
+  background: rgba(255, 255, 255, 0.35);
+  outline: none;
+  color: #000;
+}
+
+.conversion-type {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.conversion-type label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: #f0f0f5;
+  user-select: none;
+}
+
+.conversion-type input[type="radio"] {
+  margin-right: 0.5rem;
+  cursor: pointer;
+  accent-color: #ffd700; /* Gold accent for radio buttons */
+}
+
+.result {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffd700; /* Gold color for result */
+  min-height: 1.5em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease;
+}
